@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <h1>Weather App</h1>
-
-    <form class="weatherForm">
-        <input 
-            type="text" 
-            class="cityInput" 
-            placeholder="Enter city"
-            required
-        >
-        <button type="submit">Get Weather</button>
+    <!-- Weather Form (input + button side-by-side) -->
+    <form class="weatherForm" id="weatherForm">
+        <input type="text" class="cityInput" id="cityInput" placeholder="Enter city">
+        <button type="submit" id="getWeatherBtn">Get Weather</button>
     </form>
 
-    <div class="card" style="display: none;"></div>
+    <!-- Weather Card (initially hidden) -->
+    <div class="card" id="weatherCard" style="display: none;">
+        <div class="cityDisplay" id="cityDisplay">City Name</div>
+        <div class="tempDisplay" id="tempDisplay">25°C</div>
+        <div class="humidityDisplay" id="humidityDisplay">Humidity: 60%</div>
+        <div class="descDisplay" id="descDisplay">Sunny</div>
+        <div class="weatherEmoji" id="weatherEmoji">☀️</div>
+    </div>
+
+    <!-- Error message (initially hidden) -->
+    <div class="errorDisplay" id="errorDisplay" style="display: none;">
+        City not found!
+    </div>
 
     <script src="index.js"></script>
 </body>
