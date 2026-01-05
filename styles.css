@@ -1,0 +1,73 @@
+body {
+    font-family: "Courier New", monospace;
+    background: linear-gradient(135deg, #e3f2fd, #fff);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+.weatherForm {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.cityInput {
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #aaa;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #90caf9, #ffe082);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    min-width: 300px;
+}
+
+.cityDisplay,
+.tempDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.humidityDisplay,
+.descDisplay {
+    font-size: 1.4rem;
+}
+
+.weatherEmoji {
+    font-size: 5rem;
+}
+
+.errorDisplay {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
